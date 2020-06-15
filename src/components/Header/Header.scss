@@ -1,0 +1,10 @@
+@import "../../index.scss";
+.header {
+    background-color: $blue !important;
+    color: white !important;
+}
+.logout {
+    background-color: inherit;
+    color: white;
+    border: none;
+}
