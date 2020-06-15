@@ -1,0 +1,27 @@
+@import "../../index.scss";
+.info {
+  font-size: 0.8em;
+}
+// Button styles
+#button {
+  background: $yellow;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+button.view-edit-mode, button.delete, button.update {
+  border: none !important;
+  box-shadow: none !important;
+  height: 3em;
+  width: 90%;
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  height: 100vh;
+}
+// Input styles
+.input {
+  background: $light-blue;
+}

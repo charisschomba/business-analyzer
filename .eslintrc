@@ -20,7 +20,8 @@
   "rules": {
     "no-console": "warn",
     "no-eval": "error",
-    "react/display-name": "off"
+    "react/display-name": "off",
+    "no-useless-escape": "off"
   },
   "settings": {
     "react" : {
