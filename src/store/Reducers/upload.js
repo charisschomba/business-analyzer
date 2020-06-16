@@ -2,7 +2,7 @@ import { START_UPLOAD, UPLOAD_SUCCESS, UPLOAD_ERROR } from "../constants"
 const initialState = {
   message: {},
   errors: { isError: false },
-  saving: false,
+  uploading: false,
   success: false,
 }
 const reducer = (state = initialState, action) => {
