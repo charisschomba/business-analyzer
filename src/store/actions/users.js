@@ -41,11 +41,13 @@ export const auth = (data, callback, authType = "signup") => async (dispatch) =>
   dispatch({ type: CLEAR_USER_ERRORS })
   try {
     const response = await api.post(endpoint, data)
-    dispatch(authSuccess(response, authType))
+    dispatch(authSuccess(response.data, authType))
     if (authType === "signup") {
       localStorage.setItem("token", response.data.token)
+      localStorage.setItem("user", response.data.user)
       callback()
     } else {
+      localStorage.setItem("user", response.data.user.username)
       localStorage.setItem("token", response.data.user.token)
       callback("/dashboard")
     }

@@ -44,7 +44,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         success: true,
-        user: action.payload,
+        user: { ...state.user, user: action.payload.user },
         saving: false,
       }
     }

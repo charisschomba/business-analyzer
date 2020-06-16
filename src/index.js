@@ -5,8 +5,8 @@ import Router from "./routes"
 import Layout from "./components/Layout"
 
 ReactDOM.render(
-  <Layout>
-    <Router />
-  </Layout>,
+  // <Layout>
+  <Router />,
+  // </Layout>,
   document.getElementById("root")
 )

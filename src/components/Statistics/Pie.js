@@ -19,12 +19,8 @@ const PieChart = ({ incomingAmount, outgoingAmount, topProduct, quantity }) => {
         <Pie data={stat} />
         <div>
           <strong>Top Product</strong>
-          <p>
-            <strong>Product Name:</strong> {topProduct}
-          </p>
-          <p>
-            <strong>Quantity:</strong> {quantity}
-          </p>
+          <p>Product Name: {topProduct}</p>
+          <p>Quantity: {quantity}</p>
         </div>
       </div>
     )

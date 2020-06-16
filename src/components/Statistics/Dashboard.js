@@ -10,9 +10,7 @@ const Dashboard = () => {
   const [data, setData] = useState("")
   const statistics = useSelector(({ dashboard }) => dashboard)
   useEffect(() => {
-    ;(async () => {
-      dispatch(getDashboard())
-    })()
+    dispatch(getDashboard())
   }, [])
   useEffect(() => {
     setData(statistics.data)
