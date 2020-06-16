@@ -1,0 +1,24 @@
+.pie {
+  display: flex;
+  justify-content: space-between;
+
+}
+canvas.chartjs-render-monitor {
+  max-width: 700px !important;
+  max-height: 300px !important;
+}
+canvas {
+  max-width: 700px !important;
+  width: 800px !important;
+  height: 204px;
+}
+#graph-container {
+  max-width: 1500px;
+  .bar-chart-section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.pie-chart-section {
+  margin-bottom: 1rem
+}

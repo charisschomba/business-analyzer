@@ -1,7 +1,8 @@
 import React from "react"
 import { Pie } from "react-chartjs-2"
+import "./index.scss"
 
-const PieChart = ({ incomingAmount, outgoingAmount }) => {
+const PieChart = ({ incomingAmount, outgoingAmount, topProduct, quantity }) => {
   const stat = {
     labels: ["Incoming Amount", "Outgoing Amount"],
     datasets: [
@@ -14,9 +15,17 @@ const PieChart = ({ incomingAmount, outgoingAmount }) => {
   }
   {
     return (
-      <div>
-        <h2>Income Statistics</h2>
+      <div className="pie col">
         <Pie data={stat} />
+        <div>
+          <strong>Top Product</strong>
+          <p>
+            <strong>Product Name:</strong> {topProduct}
+          </p>
+          <p>
+            <strong>Quantity:</strong> {quantity}
+          </p>
+        </div>
       </div>
     )
   }

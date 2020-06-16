@@ -7,7 +7,14 @@ const BarChart = ({ label, labels, data }) => {
     datasets: [
       {
         label,
-        backgroundColor: "rgba(255,99,132,0.2)",
+        backgroundColor: [
+          "#FF6384",
+          "#36A2EB",
+          "#FF6384",
+          "#36A2EB",
+          "#FF6384",
+          "#36A2EB",
+        ],
         borderColor: "rgba(255,99,132,1)",
         borderWidth: 1,
         hoverBackgroundColor: "rgba(255,99,132,0.4)",

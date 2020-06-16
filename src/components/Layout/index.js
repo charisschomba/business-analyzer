@@ -16,6 +16,7 @@ const Layout = (props) => {
 }
 Layout.propTypes = {
   children: PropTypes.object.isRequired,
-  loggedIn: PropTypes.string,
+  loggedIn: PropTypes.bool,
+  user: PropTypes.string,
 }
 export default Layout

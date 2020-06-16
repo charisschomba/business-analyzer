@@ -22,19 +22,22 @@ const Dashboard = () => {
   const [valueLabels, valueData] = value
   const [quantityLabels, quantityData] = quantity
   return (
-    <div>
-      <h1>Business Name: {data && data.business}</h1>
+    <div id="graph-container">
+      <p>
+        <strong>Business Name:</strong> {data && data.business}
+      </p>
       <div>
-        <div>
+        <div className="pie-chart-section">
           <Pie
             incomingAmount={data.totalIncomingAmount}
             outgoingAmount={data.totalOutgoingAmount}
+            topProduct={quantityLabels[0]}
+            quantity={quantityData[0]}
           />
-          <p>Top Product: {quantityLabels[0]}</p>
         </div>
-        <div>
-          <Bar label="Quantity" labels={valueLabels} data={valueData} />
-          <Bar label="Value" labels={quantityLabels} data={quantityData} />
+        <div className="bar-chart-section">
+          <Bar label="Value" labels={valueLabels} data={valueData} />
+          <Bar label="Quantity" labels={quantityLabels} data={quantityData} />
         </div>
       </div>
     </div>

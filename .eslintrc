@@ -22,7 +22,8 @@
     "no-eval": "error",
     "no-undef": "off",
     "react/display-name": "off",
-    "no-useless-escape": "off"
+    "no-useless-escape": "off",
+    "no-unused-vars": "off"
   },
   "settings": {
     "react" : {
