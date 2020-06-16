@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import "./index.scss"
 import { Button, Spinner } from "react-bootstrap"
 const CustomButton = ({ title, handler, disabled, style, loading }) => {
   return (

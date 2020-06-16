@@ -1,0 +1,23 @@
+@import "../../index.scss";
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  //background: red;
+  .business-form {
+    background: #b3b1ab;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .multi-select {
+    margin: .5rem 1rem;
+  }
+  .select__control {
+    background: $light-blue;
+  }
+}
+label {
+  margin: 0 1rem;
+}
+

@@ -1,8 +1,16 @@
 import axios from "axios"
+import dotenv from "dotenv"
+dotenv.config()
+
+const uri = process.env.REACT_APP_API_URL
 
 const instance = axios.create({
-  // baseURL: 'https://offline-business-analyzer.herokuapp.com/api/v1',
-  baseURL: "http://localhost:4000/api/v1",
+  baseURL: uri,
 })
-// const token = localStorage.getItem("token")
+export const getCountrie = async () => {
+  const countries = await axios.get("https://trial.mobiscroll.com/content/countries.json")
+  return countries.data.map(({ text }) => {
+    return { value: text, label: text }
+  })
+}
 export default instance
