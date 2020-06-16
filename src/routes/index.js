@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Auth from "../components/Auth/Auth"
 import BusinessForm from "../components/Business/AddBusinessForm"
 import UploadCsv from "../components/Business/Upload"
+import Dashboard from "../components/Statistics/Dashboard"
 import { Provider } from "react-redux"
 import store from "../store"
 
@@ -14,6 +15,7 @@ export default () => (
         <Route exact path={ROUTES.index} component={Auth} />
         <Route path={ROUTES.business} component={BusinessForm} />
         <Route path={ROUTES.upload} component={UploadCsv} />
+        <Route path={ROUTES.dashboard} component={Dashboard} />
       </Switch>
     </Router>
   </Provider>
